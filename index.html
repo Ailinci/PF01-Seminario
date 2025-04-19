@@ -14,8 +14,8 @@
     <h2>Registro de Usuario</h2>
     <form id="registrationForm">
         <div>
-            <label for="user_id">Nombre de usuario:</label>
-            <input type="text" id="user_id" name="user_id" placeholder="Ingrese su nombre" required>
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" name="username" placeholder="Ingrese su nombre de usuario" required>
         </div>
         <div>
             <label for="email">Correo electrónico:</label>
@@ -29,7 +29,7 @@
             <label for="confirm_password">Confirmar contraseña:</label>
             <input type="password" id="confirm_password" name="confirm_password" placeholder="Repita su contraseña" required>
         </div>
-        <button type="submit">Crear cuenta</button>
+        <button type="submit">Registrarse</button>
     </form>
 
     <script>
@@ -43,7 +43,7 @@
                 }
                 
                 const userData = {
-                    user_id: $("#user_id").val(),
+                    username: $("#username").val(),
                     email: $("#email").val(),
                     password: $("#password").val()
                 };
